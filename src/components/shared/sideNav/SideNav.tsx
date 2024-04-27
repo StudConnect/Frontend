@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
-import Logo from "../logo/Logo";
-import { Link } from "react-router-dom";
 import { toggleSidenav } from "../../../features/unauth-features/ActionSlice";
+import Logo from "../logo/Logo";
 import { RootState } from "../../../types/Interface";
 
 const SideNav: React.FC = () => {
@@ -19,8 +18,8 @@ const SideNav: React.FC = () => {
         >
           <section className="h-full flex-col gap-y-[40px] items-center inline-flex py-[26px] ">
             <section className="flex-col gap-y-[8px] justify-between items-start inline-flex">
-              <section className="mb-7">
-                <Logo />
+              <section className="mb-7" onClick={onToggle}>
+                <Logo color="white"  />
               </section>
             </section>
           </section>

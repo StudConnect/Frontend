@@ -1,10 +1,8 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import {
     type Container,
     type ISourceOptions,
-    MoveDirection,
-    OutMode,
 } from "@tsparticles/engine";
 import { loadSlim } from "@tsparticles/slim";
 import Navbar from "../../components/shared/navbar/Navbar";
@@ -15,13 +13,15 @@ import Getstarted from "../../components/shared/home/Getstarted";
 import Footer from "../../components/shared/home/Footer";
 
 const Home = () => {
-    const [init, setInit] = useState(false);
+    // const [init, setInit] = useState(false);
 
     useEffect(() => {
         initParticlesEngine(async (engine) => {
             await loadSlim(engine);
         }).then(() => {
-            setInit(true);
+            console.log(true);
+            
+            // setInit(true);
         });
     }, []);
 

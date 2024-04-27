@@ -4,7 +4,6 @@ import { BsList } from "react-icons/bs";
 import { ButtonBg } from "../buttons/Buttons";
 import { useDispatch, useSelector } from "react-redux";
 import { toggleSidenav } from "../../../features/unauth-features/ActionSlice";
-import SideNav from "../sideNav/SideNav";
 import { RootState } from "../../../types/Interface";
 
 const Navbar: React.FC = () => {
