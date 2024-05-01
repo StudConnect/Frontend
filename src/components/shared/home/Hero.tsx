@@ -1,6 +1,8 @@
+import { useNavigate } from 'react-router-dom';
 import { ButtonBg } from '../buttons/Buttons';
 
 const Hero = () => {
+  const navigate = useNavigate()
   return (
     <section className="w-full md:px-10 px-4 z-10 bg-transparent relative">
       <section className="w-full flex h-[80vh] bg-image-container bg-cover bg-fixed items-center justify-center">
@@ -21,7 +23,7 @@ const Hero = () => {
           </p>
           <section className='w-fit mx-auto'>
             <ButtonBg className='px-10 py-3' onClick={function (): void {
-              throw new Error("Function not implemented.");
+              navigate("/register")
             }}>Join Community</ButtonBg>
           </section>
         </section>

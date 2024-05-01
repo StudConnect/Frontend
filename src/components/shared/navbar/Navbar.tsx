@@ -1,5 +1,5 @@
 import Logo from "../logo/Logo";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { BsList } from "react-icons/bs";
 import { ButtonBg } from "../buttons/Buttons";
 import { useDispatch, useSelector } from "react-redux";
@@ -10,6 +10,7 @@ const Navbar: React.FC = () => {
   const dispatch = useDispatch();
   const { sidenav } = useSelector((state: RootState) => state.action);
   console.log(sidenav)
+  const navigate = useNavigate()
   const onToggle = () => {
     dispatch(toggleSidenav(!sidenav));
   };
@@ -50,7 +51,7 @@ const Navbar: React.FC = () => {
           </section>
           <section className="hidden md:block">
             <ButtonBg className="px-3 py-2" onClick={function (): void {
-              throw new Error("Function not implemented.");
+              navigate("/register")
             }}>Join Community</ButtonBg>
           </section>
           <section className="md:hidden">

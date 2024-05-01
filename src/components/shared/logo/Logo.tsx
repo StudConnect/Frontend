@@ -1,3 +1,6 @@
+import { Link } from "react-router-dom";
+import LogoImage from "../../../assets/images/sc-black-removebg-cr.png"
+
 type LogoTypes = {
   color: string
 }
@@ -5,8 +8,9 @@ type LogoTypes = {
 const Logo = (props: LogoTypes) => {
   return (
     <>
-      <section>
-        <span className={`text-2xl text-${props.color} font-bold`}>StudConnect</span>
+      <section className="w-[60px]">
+        <Link to={"/"}>
+          <img className="w-full" src={LogoImage} alt={LogoImage} /></Link>
       </section>
     </>
   );

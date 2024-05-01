@@ -1,4 +1,4 @@
-import { useEffect, useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import {
     type Container,
@@ -13,15 +13,15 @@ import Getstarted from "../../components/shared/home/Getstarted";
 import Footer from "../../components/shared/home/Footer";
 
 const Home = () => {
-    // const [init, setInit] = useState(false);
+    const [init, setInit] = useState(false);
+    console.log(init);
 
     useEffect(() => {
         initParticlesEngine(async (engine) => {
             await loadSlim(engine);
         }).then(() => {
-            console.log(true);
             
-            // setInit(true);
+            setInit(true);
         });
     }, []);
 

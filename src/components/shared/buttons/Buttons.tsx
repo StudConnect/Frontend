@@ -5,7 +5,7 @@ export const ButtonBg: React.FC<ButtonProps> = ({ children, disabled, onClick, c
     <>
       <button
         className={`w-full ${disabled ? "" : ""
-          } rounded-2xl items-center justify-center inline-flex text-center linear-gradient text-white text-sm font-medium leading-normal ${className}`}
+          } rounded-2xl items-center cursor-pointer justify-center inline-flex text-center linear-gradient text-white text-sm font-medium leading-normal ${className}`}
         onClick={onClick}
         disabled={disabled}
         {...rest}
