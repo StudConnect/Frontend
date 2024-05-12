@@ -12,8 +12,40 @@ import Register from "./pages/register/Register";
 import Login from "./pages/login/Login";
 import ForgotPassword from "./pages/forgotpassword/ForgotPassword";
 import ResetPassword from "./pages/resetPassword/ResetPassword";
+import { LineWaveLoader } from "./components/shared/loaders/Loaders";
+import { useEffect, useState } from "react";
 
 const App = () => {
+  const [isLoading, setIsLoading] = useState(true); // State to track loading status
+
+  useEffect(() => {
+    // Simulate loading delay for demonstration purposes
+    const timer = setTimeout(() => {
+      setIsLoading(false); // Set loading state to false after a delay
+    }, 2000); // Adjust delay time as needed
+
+    // Clear the timer to avoid memory leaks
+    return () => clearTimeout(timer);
+  }, []);
+
+  // Render loading spinner or content based on the loading state
+  const renderContent = () => {
+    if (isLoading) {
+      return (
+        <section className="relative h-screen w-full bg-dv flex justify-center items-center">
+          <LineWaveLoader />
+        </section>
+      );
+    } else {
+      return (
+
+        <section className="App text-Plus">
+          <RouterProvider router={router} />
+          <ToastContainer />
+        </section>
+      );
+    }
+  };
 
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -28,12 +60,7 @@ const App = () => {
       </>
     )
   );
-  return (
-    <div className="App text-Plus">
-      <RouterProvider router={router} />
-      <ToastContainer />
-    </div>
-  );
+  return renderContent();
 }
 
 export default App;
