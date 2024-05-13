@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
       <header className="md:px-10 px-4 z-10 bg-transparent relative">
         <section className="flex items-center justify-between py-6">
           <section>
-            <Logo color={"white"} />
+            <Logo />
           </section>
           <section className="hidden md:block">
             <ul className="flex items-center gap-14">

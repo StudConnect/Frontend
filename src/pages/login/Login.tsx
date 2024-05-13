@@ -46,7 +46,7 @@ const Login = () => {
 
   const handleChange = () => {
     // const { name, value } = e.target;
-    // setFormData({ ...formData, [name]: value });
+    setFormData({ ...formData });
   };
 
   // const handleRegister = (e) => {
@@ -86,7 +86,7 @@ const Login = () => {
     <>
       <section className="w-full h-screen overflow-y-auto bg-dv">
         <section className="w-full flex justify-center pt-5 md:pt-10 pb-5">
-          <Logo color="white" />
+          <Logo />
         </section>
         <section className="w-full mb-7 flex-col justify-center items-center gap-1 inline-flex">
           <section className="text-center text-white text-[22px] font-semibold">

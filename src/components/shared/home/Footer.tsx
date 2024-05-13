@@ -8,7 +8,7 @@ const Footer = () => {
     <section className="relative z-10 py-24 bg-dvblue flex justify-center md:px-14 px-2">
       <section className="">
         <section className="flex justify-center mb-8">
-          <Logo color="white" />
+          <Logo />
         </section>
         <section className="flex justify-center gap-5 mb-8">
           <Link to={"/"}>

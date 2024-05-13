@@ -1,11 +1,7 @@
 import { Link } from "react-router-dom";
 import LogoImage from "../../../assets/images/sc-black-removebg-cr.png"
 
-type LogoTypes = {
-  color: string
-}
-
-const Logo = (props: LogoTypes) => {
+const Logo = () => {
   return (
     <>
       <section className="w-[60px]">

@@ -19,7 +19,7 @@ const SideNav: React.FC = () => {
           <section className="h-full flex-col gap-y-[40px] items-center inline-flex py-[26px] ">
             <section className="flex-col gap-y-[8px] justify-between items-start inline-flex">
               <section className="mb-7" onClick={onToggle}>
-                <Logo color="white"  />
+                <Logo />
               </section>
             </section>
           </section>
