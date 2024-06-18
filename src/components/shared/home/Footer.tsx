@@ -14,13 +14,13 @@ const Footer = () => {
           <Link to={"/"}>
             <FaFacebook className={iconStyles} />
           </Link>
-          <Link to={"/"}>
+          <Link to={""}>
             <FaInstagram className={iconStyles} />
           </Link>
-          <Link to={"/"}>
+          <Link to={"https://discord.gg/uYpENhRUwB"}>
             <FaDiscord className={iconStyles} />
           </Link>
-          <Link to={"/"}>
+          <Link to={"https://x.com/studconnect_X"}>
             <FaTwitter className={iconStyles} />
           </Link>
         </section>

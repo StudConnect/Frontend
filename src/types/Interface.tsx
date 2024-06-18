@@ -13,6 +13,13 @@ export interface InputProps {
   name?: string
 }
 
+export interface AccordionItem {
+    title: string;
+    icon: React.ReactNode;
+    content: string;
+    isOpen?: boolean;
+}
+
 export interface RootState {
   action: {
     sidenav: boolean;

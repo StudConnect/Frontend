@@ -11,6 +11,8 @@ import Features from "../../components/shared/home/Features";
 import Howitworks from "../../components/shared/home/Howitworks";
 import Getstarted from "../../components/shared/home/Getstarted";
 import Footer from "../../components/shared/home/Footer";
+import About from "../../components/shared/home/About";
+import Faq from "../../components/shared/home/Faq";
 
 const Home = () => {
     const [init, setInit] = useState(false);
@@ -20,7 +22,7 @@ const Home = () => {
         initParticlesEngine(async (engine) => {
             await loadSlim(engine);
         }).then(() => {
-            
+
             setInit(true);
         });
     }, []);
@@ -103,10 +105,12 @@ const Home = () => {
         <section className="relative w-full">
             <Navbar />
             <Hero />
-            <Features/>
-            <Howitworks/>
-            <Getstarted/>
-            <Footer/>
+            <About />
+            <Features />
+            <Howitworks />
+            <Faq />
+            <Getstarted />
+            <Footer />
             <Particles
                 id="tsparticles"
                 particlesLoaded={particlesLoaded}

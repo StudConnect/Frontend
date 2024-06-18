@@ -1,11 +1,21 @@
 import { useNavigate } from 'react-router-dom';
 import { ButtonBg } from '../buttons/Buttons';
+import hero_image from "../../../assets/images/map_line.png"
+import marker1 from "../../../assets/icons/marker_1.png"
+import marker2 from "../../../assets/icons/marker_2.png"
+import marker3 from "../../../assets/icons/marker_3.png"
+import marker4 from "../../../assets/icons/marker_4.png"
 
 const Hero = () => {
   const navigate = useNavigate()
   return (
-    <section className="w-full md:px-10 px-4 z-10 bg-transparent relative">
-      <section className="w-full flex h-[80vh] bg-image-container bg-cover bg-fixed items-center justify-center">
+    <section
+      style={{ backgroundImage: `url(${hero_image})` }} className="w-full bg-cover bg-no-repeat bg-center md:px-14 px-2 z-10 bg-transparent relative">
+        <img src={marker1} className='absolute left-96 top-20' alt={marker1} />
+        <img src={marker2} className='absolute right-40 top-96' alt={marker2} />
+        <img src={marker3} className='absolute left-20 bottom-20' alt={marker3} />
+        <img src={marker4} className='absolute right-96 bottom-40' alt={marker4} />
+      <section className="w-full flex h-[80vh] bg-image-container bg-fixed items-center justify-center">
         <section className="flex gap-y-7 md:w-3/4 w-full px-2 flex-col">
           <h1
             data-aos="fade-up"

@@ -22,7 +22,7 @@ const Howitworks = () => {
     },
   ]
   return (
-    <section className="relative z-10 py-20 px-6">
+    <section className="relative z-10 py-20 md:px-14 px-2">
       <section className="w-full lg:flex gap-20 items-center">
         <section className="w-full hidden lg:flex lg:w-1/2">
           <img src={bgimage} alt={bgimage} />
