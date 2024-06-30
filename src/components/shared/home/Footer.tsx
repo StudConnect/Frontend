@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import Logo from "../logo/Logo";
 import { FaDiscord, FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
