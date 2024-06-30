@@ -84,7 +84,7 @@ const Navbar: React.FC = () => {
         </section>
 
         <section
-          className={`fixed top-0 right-0 h-full p-4 w-full bg-black text-white z-20 transform transition-transform duration-300 ease-in-out ${
+          className={`fixed top-0 right-0 h-full p-4 w-full bg-dv text-white z-20 transform transition-transform duration-300 ease-in-out ${
             isSidebarOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
