@@ -30,8 +30,8 @@ const About = () => {
         <section className="w-full md:w-1/2">
           <h3 className="text-white font-medium text-lg md:text-xl mb-3 text-center md:text-left">About Us</h3>
           <h2 className="text-white font-medium text-3xl md:text-4xl mb-8 text-center md:text-left">Why Join StudConnect?</h2>
-          <p className="text-para text-left text-sm md:text-lg font-medium mb-8">StudConnect is a dedicated platform designed to unite students from around the world. Our mission is to create a vibrant community where learners can connect, collaborate, and grow together. By providing access to mentors, resources, and a supportive network, we aim to empower students to reach their full potential.</p>
-          <section className="w-full flex justify-left">
+          <p className="text-para text-center md:text-left text-sm md:text-lg font-medium mb-8">StudConnect is a dedicated platform designed to unite students from around the world. Our mission is to create a vibrant community where learners can connect, collaborate, and grow together. By providing access to mentors, resources, and a supportive network, we aim to empower students to reach their full potential.</p>
+          <section className="w-full flex justify-center md:justify-start">
             <section className='w-fit'>
               <ButtonBg className='px-10 py-3' onClick={function (): void {
                 navigate("/register")
@@ -43,13 +43,13 @@ const About = () => {
 
           <section className="flex flex-col gap-10">
             {steps.map((step) => (
-              <section className="flex gap-4">
-                <section className="flex flex-col justify-center">
-                  <section className="bg-[#6f79832b] p-3 md:p-5  justify-center flex items-center rounded-full">{step.icon}</section>
+              <section className="flex flex-col md:flex-row gap-4">
+                <section className="w-full flex flex-row md:flex-col justify-center">
+                  <section className="bg-[#6f79832b]  w-fit p-3 md:p-5  justify-center flex items-center rounded-full">{step.icon}</section>
                 </section>
                 <section className="flex flex-col gap-3">
-                  <h3 className="text-left text-white text-xs md:text-xl font-semibold">{step.title}</h3>
-                  <p className="text-para text-left text-xs md:text-sm font-medium">{step.descrip}</p>
+                  <h3 className="text-center md:text-left text-white text-xs md:text-xl font-semibold">{step.title}</h3>
+                  <p className="text-para text-center md:text-left text-xs md:text-sm font-medium">{step.descrip}</p>
                 </section>
               </section>
             ))}

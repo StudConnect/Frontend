@@ -66,9 +66,9 @@ const Faq: React.FC = () => {
                                     className="flex items-center justify-between cursor-pointer bg-dv pr-4"
                                     onClick={() => toggleAccordion(i)}
                                 >
-                                    <section className="flex items-center ">
+                                    <section className="flex items-center p-2">
                                         <section className="linear-gradient md:p-4 p-2">{acc.icon}</section>
-                                        <span className="text-xs md:text-md pl-2 text-swhite uppercase">
+                                        <span className="text-xs md:text-md pl-2 leading-5 text-swhite uppercase">
                                             {acc.title}
                                         </span>
                                     </section>
