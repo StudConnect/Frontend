@@ -86,7 +86,7 @@ const Faq: React.FC = () => {
                                 </section>
                                 {acc.isOpen && (
                                     <section className="px-4 py-2">
-                                        <p className="text-xs md:text-sm text-swhite2 00">{acc.content}</p>
+                                        <p className="text-xs md:text-sm text-swhite2 leading-5 00">{acc.content}</p>
                                     </section>
                                 )}
                             </section>

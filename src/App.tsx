@@ -33,7 +33,7 @@ const App = () => {
     if (isLoading) {
       return (
         <section className="relative h-screen w-full bg-dv flex justify-center items-center">
-          <LineWaveLoader />
+          <section className="ml-8"><LineWaveLoader /></section>
         </section>
       );
     } else {
