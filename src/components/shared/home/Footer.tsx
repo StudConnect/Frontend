@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import Logo from "../logo/Logo";
-import { FaDiscord, FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaDiscord, FaFacebook, FaInstagram, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   const iconStyles = "text-4xl text-white"
@@ -11,18 +11,21 @@ const Footer = () => {
           <Logo />
         </section>
         <section className="flex justify-center gap-5 mb-8">
-          <Link to={"/"}>
+          <a target="_blank" rel="noopener noreferrer" href={"https://www.facebook.com/profile.php?id=61559549195573&mibextid=ZbWKwL"}>
             <FaFacebook className={iconStyles} />
-          </Link>
-          <Link to={""}>
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href={"https://www.instagram.com/studconnect"}>
             <FaInstagram className={iconStyles} />
-          </Link>
-          <Link to={"https://discord.gg/uYpENhRUwB"}>
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href={"https://discord.gg/uYpENhRUwB"}>
             <FaDiscord className={iconStyles} />
-          </Link>
-          <Link to={"https://x.com/studconnect_X"}>
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href={"https://x.com/studconnect_X"}>
             <FaTwitter className={iconStyles} />
-          </Link>
+          </a>
+          <a target="_blank" rel="noopener noreferrer" href={"https://whatsapp.com/channel/0029VaQlBzt3WHTVF9zdYu2T"}>
+            <FaWhatsapp className={iconStyles} />
+          </a>
         </section>
         <p className="text-sm text-center text-[#5E676C]">
           © 2024 StudConnect. All rights reserved.

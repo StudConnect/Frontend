@@ -1,11 +1,9 @@
 import React, { useState } from 'react'
-import { BsQrCode } from 'react-icons/bs';
-import { FaGlobeAmericas, FaMinus, FaPaintBrush, FaPlus } from 'react-icons/fa';
-import { IoImageOutline } from 'react-icons/io5';
+import { FaMinus, FaPlus } from 'react-icons/fa';
 import { AccordionItem } from '../../../types/Interface';
 import { PiNumberFive, PiNumberFour, PiNumberOne, PiNumberSix, PiNumberThree, PiNumberTwo } from 'react-icons/pi';
 
-const Faq = () => {
+const Faq: React.FC = () => {
     const iconStyles = "text-swhite"
     const [accordions, setAccordions] = useState<AccordionItem[]>([
         {

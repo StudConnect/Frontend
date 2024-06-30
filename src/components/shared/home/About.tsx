@@ -31,7 +31,7 @@ const About = () => {
           <h3 className="text-white font-medium text-lg md:text-xl mb-3 text-center md:text-left">About Us</h3>
           <h2 className="text-white font-medium text-3xl md:text-4xl mb-8 text-center md:text-left">Why Join StudConnect?</h2>
           <p className="text-para text-left text-sm md:text-lg font-medium mb-8">StudConnect is a dedicated platform designed to unite students from around the world. Our mission is to create a vibrant community where learners can connect, collaborate, and grow together. By providing access to mentors, resources, and a supportive network, we aim to empower students to reach their full potential.</p>
-          <section className="w-full flex justify-center">
+          <section className="w-full flex justify-left">
             <section className='w-fit'>
               <ButtonBg className='px-10 py-3' onClick={function (): void {
                 navigate("/register")

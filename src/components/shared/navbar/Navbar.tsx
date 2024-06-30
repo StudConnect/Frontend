@@ -50,9 +50,9 @@ const Navbar: React.FC = () => {
             </ul>
           </section>
           <section className="hidden md:block">
-            <ButtonBg className="px-3 py-2" onClick={function (): void {
+            <ButtonBg className="px-6 py-3" onClick={function (): void {
               navigate("/register")
-            }}>Join Community</ButtonBg>
+            }}>Get Started</ButtonBg>
           </section>
           <section className="md:hidden">
             <BsList

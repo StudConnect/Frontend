@@ -1,5 +1,5 @@
 
-import { FcDocument, FcGlobe } from "react-icons/fc";
+import { FcBusinessman, FcDocument, FcGlobe } from "react-icons/fc";
 
 const Features = () => {
   const iconStyles = "text-8xl"
@@ -17,7 +17,7 @@ const Features = () => {
         "Utilize powerful tools for shared document editing and project collaboration. Enhance your learning through collaborative efforts",
     },
     {
-      icon: <FcDocument className={iconStyles} />,
+      icon: <FcBusinessman className={iconStyles} />,
       title: "Mentorship Opportunities",
       content:
         "Engage in mentorship programs for guidance and support. Be a mentor and make a positive impact on others' academic journeys",
@@ -41,12 +41,12 @@ const Features = () => {
       <section className="w-100 py-20">
         <section className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
           {featuresData.map((item) => (
-            <section className="bg-dvgray rounded text-center md:py-20 py-10 md:px-8 px-5">
+            <section className="bg-dvgray rounded text-center md:py-14 py-10 md:px-5 px-5">
               <section className="w-100 flex justify-center mb-5">
                 {item?.icon}
               </section>
               <h3 className="text-2xl text-white font-bold mb-5">{item.title}</h3>
-              <p className="text-base text-para mb-5">
+              <p className="text-base text-para md:leading-7 mb-5">
                 {item.content}
               </p>
             </section>

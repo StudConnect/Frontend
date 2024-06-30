@@ -32,7 +32,7 @@ const Hero = () => {
             Join a community of scholars worldwide. Collaborate, share knowledge, and grow together
           </p>
           <section className='w-fit mx-auto'>
-            <ButtonBg className='px-10 py-3' onClick={function (): void {
+            <ButtonBg className='px-12 py-5' onClick={function (): void {
               navigate("/register")
             }}>Join Community</ButtonBg>
           </section>
