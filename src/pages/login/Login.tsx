@@ -84,7 +84,7 @@ const Login = () => {
   // };
   return (
     <>
-      <section className="w-full h-screen overflow-y-auto bg-dv">
+      <section className="w-full h-screen overflow-y-auto py-14 bg-dv">
         <section className="w-full flex justify-center pt-5 md:pt-10 pb-5">
           <Logo />
         </section>

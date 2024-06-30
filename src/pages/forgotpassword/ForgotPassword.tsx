@@ -83,7 +83,7 @@ const ForgotPassword = () => {
     // };
     return (
         <>
-            <section className="w-full h-screen overflow-y-auto px-2 bg-dv">
+            <section className="w-full h-screen overflow-y-auto px-2 py-14 bg-dv">
                 <section className="w-full flex justify-center pt-5 md:pt-10 pb-5">
                     <Logo />
                 </section>
