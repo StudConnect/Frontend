@@ -24,7 +24,7 @@ const Features = () => {
     },
   ];
   return (
-    <section className="relative z-10 bg-dv py-20 md:px-14 px-2">
+    <section id="features" className="relative z-10 bg-dv py-20 md:px-14 px-2">
       <section className="w-full text-center">
         <span className="uppercase text-neutral-200 text-sm font-medium tracking-widest">Features</span>
         <h1

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Logo from "../logo/Logo";
-import { Link, useNavigate } from "react-router-dom";
+import { Link as RouterLink, useNavigate } from "react-router-dom";
 import { BsList, BsX } from "react-icons/bs";
 import { ButtonBg } from "../buttons/Buttons";
 import { useDispatch, useSelector } from "react-redux";
@@ -27,6 +27,14 @@ const Navbar: React.FC = () => {
     }
   }, [isSidebarOpen]);
 
+  // Smooth scroll to section
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const navLinks = [
     {
       text: "Home",
@@ -34,15 +42,15 @@ const Navbar: React.FC = () => {
     },
     {
       text: "About",
-      link: "/about",
+      link: "/#about",
     },
     {
       text: "Features",
-      link: "/about",
+      link: "/#features",
     },
     {
       text: "FAQs",
-      link: "/faqs",
+      link: "/#faqs",
     },
   ];
 
@@ -57,12 +65,13 @@ const Navbar: React.FC = () => {
             <ul className="flex flex-col md:flex-row md:relative items-center gap-14">
               {navLinks.map((navLink, index) => (
                 <li key={index}>
-                  <Link
+                  <RouterLink
                     className="text-base font-medium transition-all text-white"
                     to={navLink.link}
+                    onClick={() => scrollToSection(navLink.link.substring(2))}
                   >
                     {navLink.text}
-                  </Link>
+                  </RouterLink>
                 </li>
               ))}
             </ul>
@@ -84,9 +93,8 @@ const Navbar: React.FC = () => {
         </section>
 
         <section
-          className={`fixed top-0 right-0 h-full p-4 w-full bg-dv text-white z-20 transform transition-transform duration-300 ease-in-out ${
-            isSidebarOpen ? "translate-x-0" : "translate-x-full"
-          }`}
+          className={`fixed top-0 right-0 h-full p-4 w-full bg-dv text-white z-20 transform transition-transform duration-300 ease-in-out ${isSidebarOpen ? "translate-x-0" : "translate-x-full"
+            }`}
         >
           <section className="absolute top-6 right-6 z-30">
             <BsX
@@ -96,14 +104,16 @@ const Navbar: React.FC = () => {
           </section>
           <ul className="flex flex-col items-center gap-14 mt-24">
             {navLinks.map((navLink, index) => (
-              <li key={index}>
-                <Link
+              <li
+                onClick={onToggle} key={index}>
+
+                <RouterLink
                   className="text-base font-medium transition-all text-white"
                   to={navLink.link}
-                  onClick={onToggle} // Close sidebar when a link is clicked
+                  onClick={() => scrollToSection(navLink.link.substring(2))}
                 >
                   {navLink.text}
-                </Link>
+                </RouterLink>
               </li>
             ))}
             <ButtonBg

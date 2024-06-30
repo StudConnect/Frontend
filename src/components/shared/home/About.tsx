@@ -25,7 +25,7 @@ const About = () => {
   ]
   const navigate = useNavigate()
   return (
-    <section className="relative z-10 bg-dv py-20 md:px-14 px-2">
+    <section id="about" className="relative z-10 bg-dv py-20 md:px-14 px-2">
       <section className="w-full flex flex-col md:flex-row gap-10 items-center">
         <section className="w-full md:w-1/2">
           <h3 className="text-white font-medium text-lg md:text-xl mb-3 text-center md:text-left">About Us</h3>

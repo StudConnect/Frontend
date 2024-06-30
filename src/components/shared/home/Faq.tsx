@@ -50,7 +50,7 @@ const Faq: React.FC = () => {
     };
 
     return (
-        <section className="relative pt-20 bg-dv py-36 md:px-14 px-2 z-10">
+        <section id='faqs' className="relative pt-20 bg-dv py-36 md:px-14 px-2 z-10">
             <h1
                 className="text-center text-white md:text-[46px] text-[26px] mb-10 md:py-0 py-3 capitalize"
             >Frequently Asked Questions</h1>
